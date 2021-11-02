@@ -42,17 +42,21 @@ export default css`
 
   .dropdown__positioner[data-popper-placement^='top'] .dropdown__panel {
     transform-origin: bottom;
+    margin-bottom: 4px;
   }
 
   .dropdown__positioner[data-popper-placement^='bottom'] .dropdown__panel {
     transform-origin: top;
+    margin-top: 4px;
   }
 
   .dropdown__positioner[data-popper-placement^='left'] .dropdown__panel {
     transform-origin: right;
+    margin-right: 4px;
   }
 
   .dropdown__positioner[data-popper-placement^='right'] .dropdown__panel {
     transform-origin: left;
+    margin-left: 4px;
   }
 `;
