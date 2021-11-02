@@ -197,7 +197,7 @@ export default css`
     --sl-color-sky-300: 125 211 252;
     --sl-color-sky-400: 56 189 248;
     --sl-color-sky-500: 14 165 233;
-    --sl-color-sky-600: 2 132 199;
+    --sl-color-sky-600: 0 174 255;
     --sl-color-sky-700: 3 105 161;
     --sl-color-sky-800: 7 89 133;
     --sl-color-sky-900: 12 74 110;
