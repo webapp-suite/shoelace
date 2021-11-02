@@ -1,0 +1,80 @@
+import {
+  progress_ring_styles_default
+} from "./chunk.G6IJAJE2.js";
+import {
+  l
+} from "./chunk.ZXQA2JKR.js";
+import {
+  e,
+  i,
+  n,
+  t
+} from "./chunk.POKKIWRQ.js";
+import {
+  p,
+  s
+} from "./chunk.YWXV2CS2.js";
+import {
+  __decorateClass
+} from "./chunk.JHDFAWWC.js";
+
+// src/components/progress-ring/progress-ring.ts
+var SlProgressRing = class extends s {
+  constructor() {
+    super(...arguments);
+    this.value = 0;
+    this.label = "Progress";
+  }
+  updated(changedProps) {
+    super.updated(changedProps);
+    if (changedProps.has("percentage")) {
+      const radius = parseFloat(getComputedStyle(this.indicator).getPropertyValue("r"));
+      const circumference = 2 * Math.PI * radius;
+      const offset = circumference - this.value / 100 * circumference;
+      this.indicatorOffset = String(offset) + "px";
+    }
+  }
+  render() {
+    return p`
+      <div
+        part="base"
+        class="progress-ring"
+        role="progressbar"
+        aria-label=${l(this.label)}
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="${this.value}"
+        style="--percentage: ${this.value / 100}"
+      >
+        <svg class="progress-ring__image">
+          <circle class="progress-ring__track"></circle>
+          <circle class="progress-ring__indicator" style="stroke-dashoffset: ${this.indicatorOffset}"></circle>
+        </svg>
+
+        <span part="label" class="progress-ring__label">
+          <slot></slot>
+        </span>
+      </div>
+    `;
+  }
+};
+SlProgressRing.styles = progress_ring_styles_default;
+__decorateClass([
+  i(".progress-ring__indicator")
+], SlProgressRing.prototype, "indicator", 2);
+__decorateClass([
+  t()
+], SlProgressRing.prototype, "indicatorOffset", 2);
+__decorateClass([
+  e({ type: Number, reflect: true })
+], SlProgressRing.prototype, "value", 2);
+__decorateClass([
+  e()
+], SlProgressRing.prototype, "label", 2);
+SlProgressRing = __decorateClass([
+  n("sl-progress-ring")
+], SlProgressRing);
+
+export {
+  SlProgressRing
+};
