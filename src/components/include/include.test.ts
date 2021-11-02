@@ -1,5 +1,5 @@
 import { expect, fixture, html, waitUntil } from '@open-wc/testing';
-import sinon from 'sinon';
+import * as sinon from 'sinon';
 
 import '../../../dist/shoelace.js';
 import type SlInclude from './include';
