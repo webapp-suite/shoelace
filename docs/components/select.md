@@ -2,6 +2,8 @@
 
 [component-header:sl-select]
 
+## Basics
+
 Selects allow you to choose one or more items from a dropdown menu.
 
 ```html preview
