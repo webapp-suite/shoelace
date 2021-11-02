@@ -526,9 +526,9 @@ export default css`
     --sl-input-filled-color-disabled: var(--sl-color-neutral-800);
 
     /* Labels */
-    --sl-input-label-font-size-small: var(--sl-font-size-small);
-    --sl-input-label-font-size-medium: var(--sl-font-size-medium);
-    --sl-input-label-font-size-large: var(--sl-font-size-large);
+    --sl-input-label-font-size-small: var(--sl-font-size-x-small);
+    --sl-input-label-font-size-medium: var(--sl-font-size-small);
+    --sl-input-label-font-size-large: var(--sl-font-size-medium);
 
     --sl-input-label-color: inherit;
 
