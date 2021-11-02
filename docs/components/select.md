@@ -119,7 +119,7 @@ Options can be grouped visually using menu labels and dividers.
 Use the `size` attribute to change a select's size.
 
 ```html preview
-<sl-select placeholder="Small" size="small" multiple>
+<sl-select placeholder="Small" size="small" multiple clearable>
   <sl-menu-item value="option-1">Option 1</sl-menu-item>
   <sl-menu-item value="option-2">Option 2</sl-menu-item>
   <sl-menu-item value="option-3">Option 3</sl-menu-item>
@@ -127,7 +127,7 @@ Use the `size` attribute to change a select's size.
 
 <br>
 
-<sl-select placeholder="Medium" size="medium" multiple>
+<sl-select placeholder="Medium" size="medium" multiple clearable>
   <sl-menu-item value="option-1">Option 1</sl-menu-item>
   <sl-menu-item value="option-2">Option 2</sl-menu-item>
   <sl-menu-item value="option-3">Option 3</sl-menu-item>
@@ -135,7 +135,7 @@ Use the `size` attribute to change a select's size.
 
 <br>
 
-<sl-select placeholder="Large" size="large" multiple>
+<sl-select placeholder="Large" size="large" multiple clearable>
   <sl-menu-item value="option-1">Option 1</sl-menu-item>
   <sl-menu-item value="option-2">Option 2</sl-menu-item>
   <sl-menu-item value="option-3">Option 3</sl-menu-item>
