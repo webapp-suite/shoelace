@@ -133,9 +133,9 @@ export default css`
     transition: var(--sl-transition-medium) transform ease;
   }
 
-  .select--open .select__icon {
-    transform: rotate(-180deg);
-  }
+  // .select--open .select__icon {
+  //   transform: rotate(-180deg);
+  // }
 
   /* Placeholder */
   .select--placeholder-visible .select__label {
