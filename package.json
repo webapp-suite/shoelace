@@ -2,7 +2,7 @@
   "name": "@webapp-suite/shoelace",
   "description": "A forward-thinking library of web components.",
   "version": "2.0.1-beta.58",
-  "homepage": "https://github.com/@webapp-suite/shoelace",
+  "homepage": "https://github.com/webapp-suite/shoelace",
   "author": "Cory LaViska",
   "license": "MIT",
   "main": "dist/shoelace.js",
@@ -20,10 +20,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/@webapp-suite/shoelace.git"
+    "url": "git+https://github.com/webapp-suite/shoelace.git"
   },
   "bugs": {
-    "url": "https://github.com/@webapp-suite/shoelace/issues"
+    "url": "https://github.com/webapp-suite/shoelace/issues"
   },
   "scripts": {
     "start": "node scripts/build.js --bundle --serve",
