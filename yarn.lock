@@ -1033,7 +1033,7 @@ bluebird@^3.7.2:
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
 
-bootstrap-icons@^1.6.1:
+bootstrap-icons@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/bootstrap-icons/-/bootstrap-icons-1.7.0.tgz#856afbfe35287a71638d9a1b96f67faf72bbb1b6"
   integrity sha512-x2ORQ3lv1QdSnIzzQdU8mf83fbCq4FIaUinrAWw+a/d186vO3Ph7qUfqzvQDBA41AD6IoxdRHD6zUt9IXC1J6A==
