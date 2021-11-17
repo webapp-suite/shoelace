@@ -1,5 +1,5 @@
 import fs from 'fs';
-import commentParser from 'comment-parser';
+import * as commentParser from 'comment-parser';
 import pascalCase from 'pascal-case';
 
 const packageData = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
