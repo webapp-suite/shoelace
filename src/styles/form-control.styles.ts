@@ -14,8 +14,6 @@ export default css`
     display: inline-block;
     color: var(--sl-input-label-color);
     margin-bottom: var(--sl-spacing-3x-small);
-    font-weight: var(--sl-font-weight-semibold);
-    text-transform: uppercase;
   }
 
   .form-control--has-label.form-control--small .form-control__label {
