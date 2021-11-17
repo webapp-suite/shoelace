@@ -1,6 +1,8 @@
 # Integrating with NextJS
 
-This page explains how to integrate Shoelace with a NextJS app. This is a community-maintained document. For questions about this integration, please [ask the community](/resources/community).
+This page explains how to integrate Shoelace with a NextJS app.
+
+?> This is a community-maintained document. Please [ask the community](/resources/community) if you have questions about this integration. You can also [suggest improvements](https://github.com/shoelace-style/shoelace/blob/next/docs/tutorials/integrating-with-nextjs.md) to make it better.
 
 ## Requirements
 
@@ -14,7 +16,7 @@ This integration has been tested with the following:
 To get started using Shoelace with NextJS, the following packages must be installed.
 
 ```bash
-yarn add @shoelace-style/shoelace @shoelace-style/react-wrapper copy-webpack-plugin next-compose-plugins next-transpile-modules
+yarn add @shoelace-style/shoelace @shoelace-style/shoelace copy-webpack-plugin next-compose-plugins next-transpile-modules
 ```
 
 ### Importing the Default Theme

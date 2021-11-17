@@ -8,6 +8,29 @@ _During the beta period, these restrictions may be relaxed in the event of a mis
 
 ## Next
 
+- Added experimental `<sl-visually-hidden>` component
+- Improved a11y of `<sl-avatar>` by representing it as an image with an `alt` [#579](https://github.com/shoelace-style/shoelace/issues/579)
+- Improved a11y of the scroll buttons in `<sl-tab-group>`
+- Improved a11y of the close button in `<sl-tab>`
+- Improved a11y of `<sl-tab-panel>` by removing an invalid `aria-selected` attribute [#579](https://github.com/shoelace-style/shoelace/issues/579)
+- Improved a11y of `<sl-icon>` by not using a variation of the `name` attribute for labels (use the `label` prop instead)
+- Moved `role` from the shadow root to the host element in `<sl-menu>`
+- Removed redundant `role="menu"` in `<sl-dropdown>`
+- Slightly faster animations for showing and hiding `<sl-dropdown>`
+- Updated to Bootstrap Icons to 1.7.1
+
+## 2.0.0-beta.60
+
+- Added React examples and CodePen links to all components
+- Changed the `attr` in experimental `<sl-mutation-observer>` to require `"*"` instead of `""` to target all attributes
+- Fixed a bug in `<sl-progress-bar>` where the `label` attribute didn't set the label
+- Fixed a bug in `<sl-rating>` that caused disabled and readonly controls to transition on hover
+- The `panel` property of `<sl-tab>` is now reflected
+- The `name` property of `<sl-tab-panel>` is now reflected
+
+## 2.0.0-beta.59
+
+- Added React wrappers as first-class citizens
 - Added eye dropper to `<sl-color-picker>` when the browser supports the [EyeDropper API](https://wicg.github.io/eyedropper-api/)
 - Fixed a bug in `<sl-button-group>` where buttons groups with only one button would have an incorrect border radius
 - Improved the `<sl-color-picker>` trigger's border in dark mode
@@ -58,7 +81,7 @@ Shoelace doesn't have a lot of dependencies, but this release unbundles most of 
 ## 2.0.0-beta.53
 
 - 🚨 BREAKING: removed `<sl-menu-divider>` (use `<sl-divider>` instead)
-- 🚨 BREAKING: removed `percentage` attribute from `<sl-progress-bar>` and `<sl-progress-ring>` (use `value`) instead
+- 🚨 BREAKING: removed `percentage` attribute from `<sl-progress-bar>` and `<sl-progress-ring>` (use `value` instead)
 - 🚨 BREAKING: switched the default `type` of `<sl-tag>` from `primary` to `neutral`
 - Added the experimental `<sl-mutation-observer>` component
 - Added the `<sl-divider>` component

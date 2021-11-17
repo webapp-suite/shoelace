@@ -5,6 +5,11 @@
   - [Themes](/getting-started/themes)
   - [Customizing](/getting-started/customizing)
 
+- Frameworks
+  - [React](/frameworks/react)
+  - [Vue](/frameworks/vue)
+  - [Angular](/frameworks/angular)
+
 - Resources
   - [Community](/resources/community)
   - [Contributing](/resources/contributing)
@@ -64,6 +69,7 @@
   - [Relative Time](/components/relative-time)
   - [Resize Observer](/components/resize-observer)
   - [Responsive Media](/components/responsive-media)
+  - [Visually Hidden](/components/visually-hidden)
 
 - Design Tokens
   - [Typography](/tokens/typography)

@@ -21,7 +21,7 @@ export default class SlTabPanel extends LitElement {
   private componentId = `tab-panel-${++id}`;
 
   /** The tab panel's name. */
-  @property() name = '';
+  @property({ reflect: true }) name = '';
 
   /** When true, the tab panel will be shown. */
   @property({ type: Boolean, reflect: true }) active = false;
@@ -35,13 +35,7 @@ export default class SlTabPanel extends LitElement {
     this.style.display = this.active ? 'block' : 'none';
 
     return html`
-      <div
-        part="base"
-        class="tab-panel"
-        role="tabpanel"
-        aria-selected=${this.active ? 'true' : 'false'}
-        aria-hidden=${this.active ? 'false' : 'true'}
-      >
+      <div part="base" class="tab-panel" role="tabpanel" aria-hidden=${this.active ? 'false' : 'true'}>
         <slot></slot>
       </div>
     `;
