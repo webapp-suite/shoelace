@@ -4,15 +4,11 @@ import commandLineArgs from 'command-line-args';
 import copy from 'recursive-copy';
 import del from 'del';
 import esbuild from 'esbuild';
-import fs from 'fs';
 import getPort from 'get-port';
 import glob from 'globby';
 import mkdirp from 'mkdirp';
-import path from 'path';
-import { URL } from 'url';
 import { execSync } from 'child_process';
 
-const build = esbuild.build;
 const bs = browserSync.create();
 
 const { bundle, copydir, dir, serve, types } = commandLineArgs([
@@ -52,6 +48,8 @@ mkdirp.sync(outdir);
         './src/shoelace.ts',
         // Components
         ...(await glob('./src/components/**/!(*.(style|test)).ts')),
+        // Translations
+        ...(await glob('./src/translations/**/*.ts')),
         // Public utilities
         ...(await glob('./src/utilities/**/!(*.(style|test)).ts')),
         // Theme stylesheets

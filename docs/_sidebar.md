@@ -4,6 +4,7 @@
   - [Usage](/getting-started/usage)
   - [Themes](/getting-started/themes)
   - [Customizing](/getting-started/customizing)
+  - [Localization](/getting-started/localization)
 
 - Frameworks
   - [React](/frameworks/react)
@@ -12,6 +13,7 @@
 
 - Resources
   - [Community](/resources/community)
+  - [Accessibility](/resources/accessibility)
   - [Contributing](/resources/contributing)
   - [Changelog](/resources/changelog)
 

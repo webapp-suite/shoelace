@@ -4,7 +4,7 @@
 
 Icons are symbols that can be used to represent various options within an application.
 
-Shoelace comes bundled with over 1,300 icons courtesy of the [Bootstrap Icons](https://icons.getbootstrap.com/) project. These icons are part of the `default` icon library. If you prefer, you can register [custom icon libraries](#icon-libraries) as well.
+Shoelace comes bundled with over 1,500 icons courtesy of the [Bootstrap Icons](https://icons.getbootstrap.com/) project. These icons are part of the `default` icon library. If you prefer, you can register [custom icon libraries](#icon-libraries) as well.
 
 Click or tap on an icon below to copy its name and use it like this.
 
@@ -76,6 +76,22 @@ const App = () => (
     <SlIcon name="star" />
     <SlIcon name="trash" />
   </div>  
+);
+```
+
+### Labels
+
+For non-decorative icons, use the `label` attribute to announce it to assistive devices.
+
+```html preview
+<sl-icon name="star-fill" label="Add to favorites"></sl-icon>
+```
+
+```jsx react
+import { SlIcon } from '@shoelace-style/shoelace/dist/react';
+
+const App = () => (
+  <SlIcon name="star-fill" label="Add to favorites" />
 );
 ```
 
@@ -592,7 +608,7 @@ If you want to change the icons Shoelace uses internally, you can register an ic
 
 <style>
   .icon-search {
-    border: solid 1px rgb(var(--sl-panel-border-color));
+    border: solid 1px var(--sl-panel-border-color);
     border-radius: var(--sl-border-radius-medium);
     padding: var(--sl-spacing-medium);
   }
@@ -648,8 +664,8 @@ If you want to change the icons Shoelace uses internally, you can register an ic
   }
 
   .icon-list-item:hover {
-    background-color: rgb(var(--sl-color-primary-50));
-    color: rgb(var(--sl-color-primary-600));
+    background-color: var(--sl-color-primary-50);
+    color: var(--sl-color-primary-600);
   }
 
   .icon-list[data-type="outline"] .icon-list-item[data-name$="-fill"] {
